@@ -1,4 +1,28 @@
 # cd-bookmark
+[![OSS Lifecycle](https://img.shields.io/osslifecycle/erikw/cd-bookmark)](https://github.com/Netflix/osstracker)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
+## FORK
+This is a maintained fork of [mollifier/cd-bookmark](https://github.com/mollifier/cd-bookmark) that adds the following features:
+* [`$XDG_CONFIG_HOME` support](https://github.com/mollifier/cd-bookmark/pull/5)
+* [-d delete command](https://github.com/mollifier/cd-bookmark/pull/7)
+* [bash support](https://github.com/mollifier/cd-bookmark/pull/8)
+
+Migrating from [bashmarks](https://github.com/huyng/bashmarks)? Then the following aliases will make you feel at home:
+
+```bash
+alias g='cd-bookmark -c'
+alias s='cd-bookmark -a'
+alias l='cd-bookmark -l'
+alias e='cd-bookmark -e'
+alias p='cd-bookmark -p'
+alias d='cd-bookmark -d'
+```
+
+### Fork maintainance notes:
+```console
+$ git rebase -ir upstream/master
+```
 
 ## Synopsis
 zsh plugin to bookmark directories to cd.
@@ -22,7 +46,7 @@ autoload -Uz cd-bookmark
 ```
 # download all files
 % cd /path/to/dir
-% git clone https://github.com/mollifier/cd-bookmark.git
+% git clone https://github.com/erikw/cd-bookmark.git
 ```
 
 And add the following lines to your .zshrc:
@@ -37,7 +61,7 @@ autoload -Uz cd-bookmark
 If you use [Antigen](https://github.com/zsh-users/antigen), add the following line to your .zshrc:
 
 ```
-antigen bundle mollifier/cd-bookmark
+antigen bundle erikw/cd-bookmark
 ```
 
 You can set alias to this function.
