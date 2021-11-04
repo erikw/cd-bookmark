@@ -25,7 +25,7 @@ $ git rebase -ir upstream/master
 ```
 
 ## Synopsis
-zsh plugin to bookmark directories to cd.
+zsh and bash plugin to bookmark directories to cd.
 
 Inspired by [mokemokechicken post](http://qiita.com/mokemokechicken/items/69af0db3e2cd27c1c467) and shell script in the post.
 
@@ -69,6 +69,12 @@ e.g.
 
 ```
 alias cdb='cd-bookmark'
+```
+
+#### Bash
+For bash users, put this in your shell initialization file (typically `$HOME/.bashrc`):
+```
+source path/to/dir/cd-bookmark/cd-bookmark
 ```
 
 ## Usage
